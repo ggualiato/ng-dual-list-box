@@ -1,7 +1,7 @@
 <div class="list-box">
   <div class="record-picker">
     <ul>
-      <li *ngFor="let item of list" [value]="item" (click)="selectItem(item.text)" [class.selected]="item.selected" >
+      <li *ngFor="let item of source" [value]="item" (click)="selectItem(item.text)" [class.selected]="item.selected" >
         <label>{{item.text}}</label>
       </li>
     </ul>

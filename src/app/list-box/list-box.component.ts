@@ -18,13 +18,13 @@ export class ListBoxComponent implements OnInit {
   }
 
   selectItem(nome: string): void {
-    this.list.forEach((item) => {
+    this.source.forEach((item) => {
       if (item.text === nome) {
         item.selected = !item.selected
       }
     })
 
-    this.emitter.emit(this.list)
+    // this.emitter.emit(this.list)
   }
 
   listAdapter(source: string[]) {
