@@ -1,0 +1,15 @@
+.dual-list {
+	width: 358px;
+	height: 205px;	
+	border: black solid 1px;
+	display: flex;
+}
+
+.buttons {
+	display: inline;
+}
+
+.buttons button {
+	margin-top: 22px;
+	width: 50px;
+}

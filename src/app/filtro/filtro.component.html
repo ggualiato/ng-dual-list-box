@@ -1,0 +1,10 @@
+<div class="dual-list">  
+  <app-list-box [source]="listaUmBase" (emitter)="valorPassado($event)" ></app-list-box>
+  <div class="buttons" >
+    <button (click)="moveAllToRight()" >>></button>
+    <button (click)="moveToRight()">></button>
+    <button (click)="moveToLeft()"><</button>
+    <button (click)="moveAllToLeft()" ><<</button>  
+  </div>  
+  <app-list-box class="list-box" [source]="listaDois"></app-list-box>
+</div>
